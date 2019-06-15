@@ -1,0 +1,59 @@
+$color-green-emerald: #6cb784;
+$color-green-olivine: #00ff00;
+$gray-light: #a5a5a5;
+$font-stack: Helvetica,
+sans-serif;
+body {
+    $font-stack:
+}
+
+header {
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+$chartColors: #56c7fa,
+#f76540,
+#ffcb05,
+#62cd9f,
+#b67baa;
+@for $i from 1 through length($chartColors) {}
+
+$chartColorsLength: length($chartColors);
+.color {
+    display: inline-block;
+    padding: 20px;
+    width: 70px;
+    float: center;
+    @for $i from 1 through $chartColorsLength {
+        (#{$chartColorsLength}n+#{$i}) {
+            background-color: ($chartColors, $i);
+            &:before {}
+        }
+    }
+}
+
+
+}
+.num {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    display: box;
+    max-width: 500px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    word-wrap: break-word;
+}

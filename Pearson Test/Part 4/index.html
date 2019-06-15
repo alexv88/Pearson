@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Train Wreck!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <h1>Train Wreck!</h1>
+            <p>A train leaves Maryland, traveling north to a town some distance away. Another train leaves that town at either the same time, or on a brief delay, traveling south on the same track. Play with the setting below to see when they will collide.
+                Remember, that rate*time=distance.</p>
+            <div class="input1">
+                <p>Train A Speed</p>
+                <input type="text" placeholder="" name="" required>
+                <p>Distance</p>
+                <input type="text" placeholder="" name="" required>
+            </div>
+            <div class="input2">
+                <p>Train B Speed</p>
+                <input type="text" placeholder="" name="" required>
+                <p>Train B Delay</p>
+                <input type="text" placeholder="" name="" required>
+            </div>
+            <button type="submit" class="btn">Try it!</button>
+            <h1>Result!</h1>
+            <div class="Progress">
+                <progress class="Progress-main" max="100" value="60" aria-labelledby="Progress-id">     
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <footer>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./styles/style.css">
+
+<head>
+    <title>Alexandra Vasquez</title>
+
+
+    <script>
+        function findOddEven() {
+            //get the input value
+            var num = document.getElementById('num').value;
+
+            //if the value of c is 2 then it is a prime number
+            //because a prime number should be exactly divisible by 2 times only (itself and 1)
+            if (num % 2 == 0) {
+                document.getElementById('result').innerHTML = num + ' is a Even number';
+            } else {
+                document.getElementById('result').innerHTML = num + ' is a Odd number';
+            }
+        }
+    </script>
+
+
+    <!----
+    <script type="text/javascript">
+        var ulArray = ["Atlanta", "Berkeley", "Boston", "Boulder", "Calgary", "Chicago", "Dallas", "ElPaso", "Dallas", "10"];
+        var arrayLength = ulArray.length;
+        for (i = 0; i < arrayLength; i++) {
+            document.write(ulArray[i]);
+        }
+    </script>
+    ---->
+</head>
+
+<body>
+    <header>
+        <h1>Hello</h1>
+    </header>
+    <h2>This is a test for the text for Pearson. This is a test for the text for Pearson.This is a test for the text for Pearson.This is a test for the text for Pearson.This is a test for the text for Pearson.This is a test for the text for Pearson.This is
+        a test for the text for Pearson.This is a test for the text for Pearson.This is a test for the text for Pearson.</h2>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+
+    <div>
+        <form>
+            <h4>This is the Header in the form</h4>
+            First Name: <br>
+            <input type="text" name="firstname">
+            <br> Last name:<br>
+            <input type="text" name="lastname">
+            <br> Username: <br>
+            <input type="text" name="username">
+            <br> Password: <br>
+            <input type="text" name="password">
+            <br>
+            <select>
+                    <option value="Alaska">Alaska</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Texas">Texas</option>
+                </select>
+        </form>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        <br>
+        <button type="reset" value="Reset">Reset</button>
+        <br>
+        </form>
+    </div>
+
+
+    <div id="num">
+        <h2>Find out if a number is even or odd</h2>
+        <form method="post">
+            Enter a number: <input type="number" id="num" name="num" min="0" /><input type="button" value="Find Odd or Even" onclick="findOddEven()" name="find" />
+            <div style="margin-top: 10px;" id="result"></div>
+        </form>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

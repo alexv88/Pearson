@@ -1,0 +1,100 @@
+$progressBarColour: orange;
+$progressValueColour: rgb(79, 223, 215);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.form-container {
+    margin: auto;
+    width: 75%;
+    height: 50%;
+    border: 1px solid gray;
+    padding: 50px;
+    background-color: white;
+}
+
+.form-container input[type=text],
+.form-container input[type=text] {
+    padding: 15px;
+    width: 300px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.input1,
+.input2 {
+    display: inline-block;
+    width: 300px;
+    margin: 5px;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: orange;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 20%;
+    margin: 5px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.Progress-main {
+    background-color: orange;
+    display: block;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.Progress-main::-moz-progress-bar {
+    background: $progressValueColour;
+}
+
+.Progress-main::-webkit-progress-bar {
+    background: $progressBarColour;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.Progress-main::-webkit-progress-value {
+    background: $progressValueColour;
+}
+
+.Progress-main::-ms-fill {
+    background: $progressValueColour;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.Progress-bar {
+    margin-top: 5px;
+    background-color: $progressBarColour;
+    height: 8px;
+}
+
+.Progress-value {
+    background-color: $progressValueColour;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
